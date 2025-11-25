@@ -240,6 +240,7 @@ export default function DrawPage() {
           detail: {
             engineType,
             code: targetCode,
+            open:true,
           },
         }),
       );
@@ -381,12 +382,12 @@ export default function DrawPage() {
             new CustomEvent('canvas-code-changed', {
               detail: {
                 engineType: 'drawio',
-                code: xml,
+                code: xml
               },
             }),
           );
         }}
-        onAutosave={handleDrawioAutosave}
+        // onAutosave={handleDrawioAutosave}
       />
     );
   };

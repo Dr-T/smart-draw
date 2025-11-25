@@ -108,6 +108,7 @@ export default function FloatingCodeEditor({
         const detail = event?.detail || {};
         const eventEngineType = detail.engineType;
         const newCode = detail.code;
+        const open = detail.open;
 
         if (typeof newCode !== 'string' || !newCode.trim()) return;
         if (eventEngineType && eventEngineType !== engineType) return;
@@ -122,7 +123,7 @@ export default function FloatingCodeEditor({
           lastSource: 'canvas',
         });
 
-        if (!isOpen) {
+        if (!isOpen&&open) {
           setIsOpen(true);
         }
       } catch (error) {
