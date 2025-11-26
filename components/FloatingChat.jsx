@@ -347,7 +347,7 @@ export default function FloatingChat({
     return (
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed top-36 right-6 w-14 h-14 bg-primary text-primary-foreground rounded-full shadow-xl shadow-primary/20 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center z-50"
+        className="fixed top-42 right-6 w-14 h-14 bg-primary text-primary-foreground rounded-full shadow-xl shadow-primary/20 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center z-50"
       >
         <WandSparkles className="w-6 h-6" />
       </button>
@@ -356,7 +356,7 @@ export default function FloatingChat({
 
   return (
     <>
-    <Card ref={panelRef} className="fixed top-4 bottom-4 right-4 w-[420px] md:w-[440px] h-auto shadow-2xl flex flex-col z-50 bg-white/95 supports-[backdrop-filter]:bg-white/85 backdrop-blur-xl border border-zinc-200 rounded-[24px] overflow-hidden">
+    <Card ref={panelRef} className="fixed top-42 bottom-16 right-4 w-[380px] md:w-[380px] h-auto shadow-2xl flex flex-col z-50 bg-white/95 supports-[backdrop-filter]:bg-white/85 backdrop-blur-xl border border-zinc-200 rounded-[24px] overflow-hidden">
       {/* Header */}
       <div className="flex items-center justify-between px-5 py-3 bg-white/50 border-b border-zinc-100/50">
         {/* ✨ v6.0: 左侧 - 引擎切换下拉菜单 */}
@@ -444,7 +444,7 @@ export default function FloatingChat({
 
       {/* Messages Area */}
       <ScrollArea className="flex-1 px-5 py-2">
-        <div className="space-y-6 pb-4">
+        <div className="space-y-6 ">
           {messages.length === 0 ? (
             <div className="flex flex-col items-center justify-center text-center text-zinc-400 text-sm py-20 gap-3">
               <div className="w-12 h-12 bg-zinc-50 rounded-2xl flex items-center justify-center mb-2">
@@ -1017,7 +1017,7 @@ function CodeBubble({ codeText, onApplyCode, onApplyXml }) {
           
           <pre
             className={cn(
-              'font-mono text-[12px] leading-6 px-4 py-4 pt-8 whitespace-pre-wrap break-words break-all text-zinc-700 max-h-[60vh] overflow-auto w-full max-w-full min-w-0'
+              'font-mono text-[12px] leading-6 px-4 py-4 pt-8 whitespace-pre-wrap break-words break-all text-zinc-700 max-h-[36vh] overflow-auto w-full max-w-full min-w-0'
             )}
           >{codeText}</pre>
         </div>

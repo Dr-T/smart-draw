@@ -394,7 +394,8 @@ export default function DrawPage() {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-gray-50" style={{ paddingRight: chatPanelWidth || 0 }}>
+    // <div className="flex flex-col h-screen bg-gray-50" style={{ paddingRight: chatPanelWidth || 0 }}>
+    <div className="flex flex-col h-screen bg-gray-50" style={{ paddingRight: 0 }}>
       {/* Header */}
       <AppHeader />
 
