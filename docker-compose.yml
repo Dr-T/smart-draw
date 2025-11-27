@@ -1,0 +1,16 @@
+services:
+  smart-diagram:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3010"
+    environment:
+      - NODE_ENV=production
+      # Server-side LLM configuration (optional)
+      # - ACCESS_PASSWORD=your-secure-password
+      # - SERVER_LLM_TYPE=openai
+      # - SERVER_LLM_BASE_URL=https://api.openai.com/v1
+      # - SERVER_LLM_API_KEY=sk-your-api-key-here
+      # - SERVER_LLM_MODEL=gpt-4
+    restart: unless-stopped
