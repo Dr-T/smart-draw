@@ -56,7 +56,7 @@ export default function AppHeader() {
             🎁 限时领 Key
           </button>
            */}
-          {/* Buy Me a Coffee Button */}
+          {/* Buy Me a Coffee Button
           <button
             type="button"
             onClick={() => setIsSponsorOpen(true)}
@@ -83,6 +83,7 @@ export default function AppHeader() {
             </svg>
             <span>请作者喝杯奶茶</span>
           </button>
+           */}
           {/* Documentation Link
           <a
             href="https://smart-draw-doc.aizhi.site"
