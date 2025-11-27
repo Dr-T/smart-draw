@@ -12,9 +12,7 @@
 Read the English version: [README_EN.md](README_EN.md)
 
 ## 一图流
-<img width="2816" height="1536" alt="Gemini_Generated_Image_pksufbpksufbpksu" src="https://github.com/user-attachments/assets/e6cea5b9-6121-4273-8c3e-43bb68a8c03e" />
-
-
+<img width="2816" height="1536" alt="Gemini_Generated_Image_2drs882drs882drs" src="https://github.com/user-attachments/assets/9a36cbbf-76b4-4590-b571-69220a28d758" />
 
 
 
